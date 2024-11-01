@@ -63,7 +63,7 @@ class _NoteListState extends ConsumerState<NoteList> {
                   ),
                   data: (List<Note> notes) => isGridView
                       ? GridView.builder(
-                          padding: const EdgeInsets.all(12.0),
+                         
                           gridDelegate:
                               const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
@@ -72,7 +72,7 @@ class _NoteListState extends ConsumerState<NoteList> {
                           itemBuilder: (context, index) {
                             String noteId = notes[index].reference!.id;
                             return Padding(
-                              padding: const EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: InkWell(
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(15)),

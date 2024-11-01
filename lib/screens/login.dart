@@ -36,6 +36,11 @@ class _LoginState extends ConsumerState<Login> {
           key: _formKey,
           child: Column(
             children: [
+              
+              const Padding(
+                padding:  EdgeInsets.only(top: 32.0, bottom: 24.0),
+                child: Text("Todo App", style: TextStyle(fontSize: 24),),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: TextFormField(
